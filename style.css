@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Neutral Face';
+    src: url(./Neutral\ Face.ttf) format('truetype'); 
+}
+
+:root{
+    --main-color: #6d6f79;
+    --body-color: #090a1a;
+    --container-color: #171b3c;
+    --heading-color: #2e2e3b;
+    --low-grey: #5c5c5c;
+    --box-color: #0d0f26;
+    --bg-color: rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    font-family: 'Neutral Face';
+    text-transform: uppercase;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    font-size: 23px;
+    padding-top: 30px;
+}
+
+header .logo{
+    margin-left: 25px;
+}
+
+header .menu-items ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header .menu-items li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+header .menu-items ul li a {
+    margin: 0px 15px;
+}
+
+header .menu-items ul li a:hover{
+    color: var(--main-color);
+    font-size: 26px;
+    transition: all 0.3s ease-in;
+    /* filter: drop-shadow(0 0 2px white); */
+}
+
+header .lang p a{
+    margin-right: 25px;
+    word-spacing: 10px;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+    color: #2e2e3b;
+}
+
+header .lang #ENG:hover{
+    color: rgb(129, 129, 129);
+    transition: all 0.3s ease-in;
+    /* filter: drop-shadow(0 0 1px red); */
+    /* opacity: 0.3; */
+}
+
+header .lang #PT:hover{
+    color: rgb(129, 129, 129);
+    transition: all 0.3s ease-in;
+    /* filter: drop-shadow(0 0 1px rgb(0, 255, 0)); */
+    /* opacity: 0.3; */
+}
+
+.wrapper{
+    position: absolute;
+    bottom: 25%;
+    z-index:  -1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 30px;
+    height: fit-content;
+}
+
+.left-container {
+    margin-left: 25px;
+}
+
+.left-container-1 h1 {
+    width: 50%;
+    margin: 10px 0px;
+    line-height: 95%;
+    font-size: 80px;
+    /* font-weight: lighter; */
+}
+
+.left-container-2 {
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.left-container-2 .left-container-2-1 {
+    width: 40%;
+}
+
+.left-container-2 .left-container-2-2 {
+    margin: 0px 20px;
+}
+
+.left-container-2 .left-container-2-2 a {
+    margin-bottom: 4px;
+    color: var(--low-grey);
+    font-size: 22px;
+}
+
+.left-container-2 .left-container-2-2 a:hover {
+    margin-bottom: 4px;
+    color: white;
+    font-size: 24px;
+    transition: all 0.5s ease-in;
+}
+
+.left-container-2 p {
+    font-size: 15px;
+    line-height: 170%;
+    color: var(--low-grey);
+}
+
+.container .right-container {
+    margin-right: 25px;
+    background-color: white;
+    color: black;
+    width: 500px;
+    height: fit-content;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.container .right-container:hover{
+    margin-right: 25px;
+    background-color: white;
+    color: black;
+    width: 550px;
+    height: fit-content;
+    font-size: 22px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in;
+}
+
+.right-container-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.right-container-box .right-container-box-inner-1,
+.right-container-box .right-container-box-inner-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.right-container-box h1 {
+    font-size: 25px;
+}
+
+.right-container-box p {
+    font-size: 15px;
+}
+
+span {
+    overflow: hidden;
+    display: block;
+}
+
+.text {
+    height: 200px;
+    display: inline-block;
+    font-size: 250px;
+    line-height: 84%;
+    font-family: Modak;
+    padding-left: 7px;
+    padding-top: 100px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: calc(50vh - 100px);
+    text-shadow: 7px 7px 0px #d2d2d22e;
+}
