@@ -36,8 +36,8 @@ tl.from(".right-container", {
     opacity: 0,
     duration: 1,
 });
-tl.from(".left-container-2-2 p", {
-    y: 50,
+tl.from(".left-container-2-2", {
+    y: 200,
     duration: 0.5,
     stagger: {
         amount: 0.4,
